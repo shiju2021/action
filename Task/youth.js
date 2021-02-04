@@ -110,7 +110,7 @@ if (isGetCookie = typeof $request !== 'undefined') {
   await openbox();
   await getAdVideo();
   await gameVideo();
-  //await readArticle();
+  await readArticle();
   await Articlered();
   await readTime();
 for (k=0;k<5;k++){
