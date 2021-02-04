@@ -500,8 +500,8 @@ function readArticle() {
         $.post(url, (error, response, data) => {
            readres = JSON.parse(data);
      if (typeof readres.items.read_score === 'number'&&readres.items.read_score!=0)  {
-              detail += `【阅读奖励】+${readres.items.read_score}个青豆\n`;
-             $.log(`阅读奖励 +${readres.items.read_score}个青豆\n`)
+            //  detail += `【阅读奖励】+${readres.items.read_score}个青豆\n`;
+            // $.log(`阅读奖励 +${readres.items.read_score}个青豆\n`)
             } 
     else if (readres.items.max_notice == '看太久了，换1篇试试') {
               //detail += `【阅读奖励】看太久了，换1篇试试\n`;
