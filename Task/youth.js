@@ -110,7 +110,7 @@ if (isGetCookie = typeof $request !== 'undefined') {
   await openbox();
   await getAdVideo();
   await gameVideo();
-  //await readArticle();
+  await readArticle();
   await Articlered();
   await readTime();
 for (k=0;k<5;k++){
@@ -546,7 +546,7 @@ function readTime() {
         $.post(url, (error, response, data) => {
             let timeres = JSON.parse(data)
             if (timeres.error_code == 0) {
-                readtimes = timeres.time / 60
+                readtimes = timeres.time
                 detail += `【阅读时长】共计` + Math.floor(readtimes) + `分钟\n`
               $.log(`阅读时长共计` + Math.floor(readtimes) + `分钟`)
             } else {
