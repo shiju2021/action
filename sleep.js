@@ -1,8 +1,6 @@
-
-
 const $ = new Env('睡眠赚');
 status = (status = ($.getval("bsxqstatus") || "1") ) > 1 ? `${status}` : ""; // 账号扩展字符
-const bsxqrlArr = [], bsxqheaderArr = [],bsxqbodyArr = []
+
 
 
 let sjurl = 'http://sleep.zouluzhuan.com/api/member/randCoin'
@@ -11,7 +9,7 @@ const sjhd = {"Accept": "*/*","Accept-Encoding": "gzip, deflate","Accept-Languag
 var zz = ''
 var zzz =''
 var bzz=''
-var bb=''
+var bb2=''
 
 !(async () => {
   if (typeof $request !== "undefined") {
@@ -120,7 +118,7 @@ let url = {
                     console.log('体力增加回执:成功🌝 ')
                     }
                      if(result.code == 2001){
-                      bb=1
+                      bb2=1；
                         console.log('没有体力'}
                         } catch (e) {
                      $.logErr(e, resp);
